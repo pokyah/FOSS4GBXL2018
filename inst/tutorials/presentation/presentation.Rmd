@@ -438,12 +438,16 @@ ourLearners = list(
   l3 = mlr::makeLearner(cl = "regr.nnet", id = "NeuralNetwork", par.vals = list(size = 10)),
   l4 = mlr::makeLearner(cl = "regr.km", id = "Kriging"),
   l5 = mlr::makeLearner(cl = "regr.kknn", id = "KNearestNeighborRegression"))
+
+# 
+ourLearners
 ```
 
 ### Defining our resampling strategy
 ```{r resamplMLR, exercise = TRUE}
 # Defining our learners
 ourResamplingStrategy = mlr::makeResampleDesc("LOO")
+ourResamplingStrategy
 ```
 
 ### Performing our benchmark
@@ -497,6 +501,8 @@ ourPredictionGrid = dplyr::filter(ourPredictionGrid, !is.na(altitude))
 ourModel = mlr::train(
   learner = mlr::getBMRLearners(bmr = ourbenchmark)[[as.character(best.learner$learner.id)]],
   task = ourTask)
+
+ourModel
 ```
 
 ### Predicting using the trained learner
