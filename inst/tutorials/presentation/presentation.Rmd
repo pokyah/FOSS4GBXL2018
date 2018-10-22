@@ -397,9 +397,10 @@ It is called supervised learning because the process of an algorithm learning fr
 
 ### MLR library
 
-![](https://avatars0.githubusercontent.com/u/12941794?s=400&v=4)  
+`mlr` is a `r fa("r-project")` library that offers a standardized interface for all its machine learning algorithms. Full details & capabilities on the [website](https://mlr-org.github.io/mlr/index.html)  
 
-`mlr` is a `r fa("r-project")` library that offers a standardized interface for all its machine learning algorithms. Full details & capabilities on the [website](https://mlr-org.github.io/mlr/index.html)
+
+![](https://github.com/mlr-org/mlr/raw/master/man/figures/logo_navbar.png)  
 
 ### the idea
 
