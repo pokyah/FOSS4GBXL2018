@@ -1,0 +1,12 @@
+name: FOSS4GBXL2018
+title: FOSS4GBXL2018
+username:
+account: pokyah
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 509338
+bundleId: 1645117
+url: https://pokyah.shinyapps.io/foss4GBXL2018/
+when: 1539673303.11341
+asMultiple: FALSE
+asStatic: FALSE
