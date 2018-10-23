@@ -50,7 +50,7 @@ library(ggplot2)
 load("FOSS4GBXL2018.RData")
 ```
 
-## WELCOME ! 
+## HELLO ! 
 
 Welcome to this Session! 
 

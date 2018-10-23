@@ -60,8 +60,8 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
     width:100%;
 }
 </style>
-<div id="section-welcome" class="section level2">
-<h2>WELCOME !</h2>
+<div id="section-hello" class="section level2">
+<h2>HELLO !</h2>
 <p>Welcome to this Session!</p>
 <blockquote>
 <p>Why and How to use R as an opensource GIS : The AGROMET project usecase</p>
@@ -490,7 +490,10 @@ ourLearners = list(
   l2 = mlr::makeLearner(cl = &quot;regr.fnn&quot;, id = &quot;FastNearestNeighbours&quot;),
   l3 = mlr::makeLearner(cl = &quot;regr.nnet&quot;, id = &quot;NeuralNetwork&quot;, par.vals = list(size = 10)),
   l4 = mlr::makeLearner(cl = &quot;regr.km&quot;, id = &quot;Kriging&quot;),
-  l5 = mlr::makeLearner(cl = &quot;regr.kknn&quot;, id = &quot;KNearestNeighborRegression&quot;))</code></pre>
+  l5 = mlr::makeLearner(cl = &quot;regr.kknn&quot;, id = &quot;KNearestNeighborRegression&quot;))
+
+# 
+ourLearners</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
 </div>
 </div>
@@ -498,7 +501,8 @@ ourLearners = list(
 <h3>Defining our resampling strategy</h3>
 <div class="tutorial-exercise" data-label="resamplMLR" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code># Defining our learners
-ourResamplingStrategy = mlr::makeResampleDesc(&quot;LOO&quot;)</code></pre>
+ourResamplingStrategy = mlr::makeResampleDesc(&quot;LOO&quot;)
+ourResamplingStrategy</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
 </div>
 </div>
@@ -555,7 +559,9 @@ ourPredictionGrid = dplyr::filter(ourPredictionGrid, !is.na(altitude))
 # training the neural net on the dataset
 ourModel = mlr::train(
   learner = mlr::getBMRLearners(bmr = ourbenchmark)[[as.character(best.learner$learner.id)]],
-  task = ourTask)</code></pre>
+  task = ourTask)
+
+ourModel</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":false,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
 </div>
 </div>
