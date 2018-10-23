@@ -5,7 +5,7 @@ This package contains the interactive presentation I'll give at [FOSS4GBXL2018](
 
 ```r
 install.packages("learnr") # library required for interactive tutorials
-devtools::install_github("pokyah/FOSS4GBXL2018", ref = "master") # this package
+devtools::install_github("pokyah/foss4GBXL2018", ref = "master") # this package
 packrat::restore() # install all the R-packages required for this tuto using packrat
 learnr::run_tutorial("presentation", package = "FOSS4GBXL2018") # launch the tutorial
 ```
