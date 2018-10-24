@@ -385,9 +385,14 @@ map
 
 ### Supervised Machine learning
 
-> We will go through a very simple example of machine learning usecase
+> We will go through a very simple example of machine learning usecase using `mlr` package
 
-### Machine Learning definition
+`mlr` is a `r fa("r-project")` library that offers a standardized interface for all its machine learning algorithms. Full details & capabilities on the [website](https://mlr-org.github.io/mlr/index.html)  
+
+
+![](https://github.com/mlr-org/mlr/raw/master/man/figures/logo_navbar.png)  
+
+### short definition
 
 From machinelearningmastery.com :
 
@@ -395,21 +400,7 @@ From machinelearningmastery.com :
 The goal is to approximate the mapping function so well that when you have new input data (x), you can predict the output variables (Y) for that data.
 It is called supervised learning because the process of an algorithm learning from the training dataset can be thought of as a teacher supervising the learning process
 
-### MLR library
-
-`mlr` is a `r fa("r-project")` library that offers a standardized interface for all its machine learning algorithms. Full details & capabilities on the [website](https://mlr-org.github.io/mlr/index.html)  
-
-
-![](https://github.com/mlr-org/mlr/raw/master/man/figures/logo_navbar.png)  
-
-### the idea
-
-* For each hourly set of temperature records (30 stations) ...
-* run a benchmark experiment where different regression learning algorithms are used to learn ...
-* from various regression tasks (i.e. datasets with different combinations of explanatory variables + the target weather parameter) ...
-* with the aim to compare and rank the performances of combinations of algorithm + used explanatory variables using a cross validation resampling strategy (LOOCV)
-
-### Defining our ML task
+### Defining our Machine Learning task
 ```{r taskMLR, exercise = TRUE}
 # loading the mlr library
 library(mlr)
@@ -565,7 +556,7 @@ map2
 
 ### EXPORTATION TO VARIOUS FORMATS
 
-> We can easily write to varipous formats thanks to `sf` library. Also possible to write to POSTGIS db thanks to `rpostigis`
+> We can easily write to various formats thanks to `sf` library. Also possible to write to POSTGIS db thanks to `rpostigis`
 
 Let's see how to write to geojson
 
