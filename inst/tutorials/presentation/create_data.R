@@ -20,6 +20,7 @@ library(rnaturalearthhires)
 library(kknn)
 library(nnet)
 library(DiceKriging)
+library(bst)
 library(mlr)
 library(geojsonsf)
 
